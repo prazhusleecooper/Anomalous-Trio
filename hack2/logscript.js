@@ -22,8 +22,16 @@ cache: false,
 success: function(html) {
 
 
-window.location.href="profile.html"
-alert(html);
+//alert(html);
+alert("Welcome!!!!!!!!");
+/*<?php
+ session_start();
+  $_SESSION['userEmail'] = $email2;
+
+?>*/
+window.location.href="profile.html";
+//displayElements(email);
+
 }
 
 });

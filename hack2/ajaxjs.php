@@ -38,6 +38,36 @@ catch(PDOException $e)
     {
     echo "Error: " . $e->getMessage();
     }
-
+$message = '';  
+ $error = '';  
+ if(isset($_POST["submit"]))  
+ {  
+          
+           if(file_exists('users.json'))  
+           {  
+                $current_data = file_get_contents('users.json');  
+                $array_data = json_decode($current_data, true);  
+                $extra = array(  
+                     'Name'             =>     $name2,  
+                     'Email'            =>     $email2,  
+                     'Password'         =>     $password2,
+                     'Date of Birth'    =>     $dob2,
+                     'Age'              =>     $age2,
+                     'Address'          =>     $address2,
+                     'Number'           =>     $phone2,  
+                );  
+                $array_data[] = $extra;  
+                $final_data = json_encode($array_data);  
+                if(file_put_contents('employee_data.json', $final_data))  
+                {  
+                     $message = "<label class='text-success'>File Appended Success fully</p>";  
+                }  
+           }  
+           else  
+           {  
+                $error = 'JSON File not exits';  
+           }  
+       
+ }  
 
 ?>

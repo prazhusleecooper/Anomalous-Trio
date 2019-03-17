@@ -43,7 +43,13 @@ $result = $stmt->fetchAll();
  if (count($result) == 0) {
     echo "login failed! <br />";
   } else {
-    echo "Welcome, ";//.htmlentities($result[0]['name'])."!<br />";
+    echo "Welcome!!!!!!!!1";//.htmlentities($result[0]['name'])."!<br />";
+    //session_start();
+   // $_SESSION['userEmail'] = $email2;
+
+
+      session_start();
+      $_SESSION['userEmail'] = $email2;
   }
   
   $conn = null;

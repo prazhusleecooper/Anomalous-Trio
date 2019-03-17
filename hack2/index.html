@@ -1,3 +1,6 @@
+<!--<?php include 'JsonConv.php';?>
+-->
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -33,7 +36,7 @@
 </head>
 
 <body>
-
+    <?php include 'JsonConv.php';?>
     <!--======================================== 
            Preloader
     ========================================-->
@@ -83,25 +86,25 @@
                         <h2 class="text-center">Signup</h2>
                         <hr>
                         <div class="form-group">
-                          NAME: <input type="text" class="form-control" placeholder="Full Name" required="required" id="name">
+                          NAME: <input type="text" class="form-control" placeholder="Full Name" required="required"  name="name"  id="name">
                         </div>
                         <div class="form-group">
-                        EMAIL:  <input type="email" class="form-control" placeholder="Email Address" required="required" id="email">
+                        EMAIL:  <input type="email" class="form-control" placeholder="Email Address" required="required"  name="email"  id="email">
                         </div>
                         <div class="form-group">
-                          PASSWORD:  <input type="password" class="form-control" placeholder="password" required="required" id="password">
+                          PASSWORD:  <input type="password" class="form-control" placeholder="password" required="required"  name="password"  id="password">
                         </div>
                         <div class="form-group">
-                          DOB:  <input type="date" class="form-control" placeholder="DOB required" required="required" id="dob">
+                          DOB:  <input type="date" class="form-control" placeholder="DOB required" required="required" name="dob"   id="dob">
                         </div>
                         <div class="form-group">
-                          AGE:  <input type="number" class="form-control" placeholder="Age" required="required" id="age">
+                          AGE:  <input type="number" class="form-control" placeholder="Age" required="required"  name="age"  id="age">
                         </div>
                         <div class="form-group">
-                          Address:  <input type="text" class="form-control" placeholder="Address" required="required" id="address">
+                          Address:  <input type="text" class="form-control" placeholder="Address" required="required"  name="address"  id="address">
                         </div>
                         <div class="form-group">
-                          PHONE:  <input type="number" class="form-control" placeholder="Phone no" required="required" id="phone">
+                          PHONE:  <input type="number" class="form-control" placeholder="Phone no" required="required"  name="phone"  id="phone">
                         </div>
                         <div class="form-group text-center">
                             <button type="submit" class="btn btn-blue btn-block" id="submit" onclick="myFunction()">SUBMIT</button>

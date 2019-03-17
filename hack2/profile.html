@@ -1,3 +1,11 @@
+<?php
+    session_start();
+    
+
+?>
+
+
+
 <html>
     <html lang="en">
 <head>
@@ -9,6 +17,13 @@
     <meta name="author" content="Made By GN DESIGNS">
 
     <title>PROFILE</title>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <!--<script src="profileedit.js"></script>-->
+
+
+
+
 
     <!-- // PLUGINS (css files) // -->
     <link href="assets/js/plugins/bootsnav_files/skins/color.css" rel="stylesheet">
@@ -26,7 +41,14 @@
     
 </head>
 
-<body>
+<body >
+    <?php
+        echo "<script type="text/javascript">document.getElementById('name').value=$_SESSION['userEmail']</script>";
+
+
+
+
+    ?>
     <div class="page-preloader">
         <div class="spinner">
             <div class="rect1"></div>
@@ -72,7 +94,7 @@
                     <form class="signup-form">
                         <h2 class="text-center1">  <a href="#" class="btn btn-info btn-lg">
           <span class="glyphicon glyphicon-pencil"></span>  
-        </a>       &nbsp;&nbsp;&nbsp;<img src="avatar.png" alt="Avatar" class="avatar">  PROFILE</h2>
+        </a>       &nbsp;&nbsp;&nbsp;PROFILE</h2>
                         <hr>
                         <div class="form-group">
                             
@@ -99,6 +121,8 @@
             </div>
         </div>
     </section>
+     
+
      <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
@@ -111,7 +135,12 @@
     <script src="assets/js/main.js"></script>
                 
 
-	
+	<!--<script type="text/javascript">
+     document.getElementById("name").value="abc";  
+    </script>-->
+
+
+    
 </body>
 
 
